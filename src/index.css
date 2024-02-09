@@ -1,7 +1,10 @@
-@import-normalize; /* bring in normalize.css styles */
+@import-normalize;
 
 :root {
   /* primary colors */
+  --black-primary: #050505;
+  --white: #ffffff;
+  --black-secondary: #0f0f0f;
 
   /* secondary colors */
 
