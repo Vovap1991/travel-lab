@@ -47,10 +47,10 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 14px;
         line-height: 1.43;
         background-color: var(--black-primary);
-       
         color: var(--white);
         width: 100%;
         height: 100vh;
+        padding-bottom: 40px;
     }
     header {
         background-color: var(--black-secondary);
