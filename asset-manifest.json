@@ -1,7 +1,7 @@
 {
   "files": {
-    "main.css": "/travel-lab/static/css/main.0d04f32f.css",
-    "main.js": "/travel-lab/static/js/main.875d92b3.js",
+    "main.css": "/travel-lab/static/css/main.d63dda85.css",
+    "main.js": "/travel-lab/static/js/main.91d968f3.js",
     "static/media/heroImage.jpeg": "/travel-lab/static/media/heroImage.49514468863a9b7f47f9.jpeg",
     "static/media/Poppins-Regular.ttf": "/travel-lab/static/media/Poppins-Regular.35d26b781dc5fda684cc.ttf",
     "static/media/Poppins-Medium.ttf": "/travel-lab/static/media/Poppins-Medium.673ed42382ab264e0bf5.ttf",
@@ -9,11 +9,11 @@
     "static/media/Poppins-Bold.ttf": "/travel-lab/static/media/Poppins-Bold.cdb29a5d7ccf57ff05a3.ttf",
     "static/media/sprite.svg": "/travel-lab/static/media/sprite.4b6a9e04ce33f1dddd543c47c32fa377.svg",
     "index.html": "/travel-lab/index.html",
-    "main.0d04f32f.css.map": "/travel-lab/static/css/main.0d04f32f.css.map",
-    "main.875d92b3.js.map": "/travel-lab/static/js/main.875d92b3.js.map"
+    "main.d63dda85.css.map": "/travel-lab/static/css/main.d63dda85.css.map",
+    "main.91d968f3.js.map": "/travel-lab/static/js/main.91d968f3.js.map"
   },
   "entrypoints": [
-    "static/css/main.0d04f32f.css",
-    "static/js/main.875d92b3.js"
+    "static/css/main.d63dda85.css",
+    "static/js/main.91d968f3.js"
   ]
 }
