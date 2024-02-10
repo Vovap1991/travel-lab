@@ -1,3 +1,4 @@
+import { FeedbackForm } from 'components/FeedbackForm/FeedbackForm';
 import {
   HeroSectionStyled,
   HeroContainer,
@@ -32,6 +33,7 @@ export const HeroSection = ({ backgroundImage }) => {
             <p>Індивідуальний підхід до клієнтів</p>
           </AdvantagesListItem>
         </AdvantagesList>
+        <FeedbackForm />
       </HeroContainer>
     </HeroSectionStyled>
   );
