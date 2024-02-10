@@ -1,76 +1,70 @@
-import sprite from '../../assets/sprite.svg';
+import { Container } from 'components/StyledComponents/Container';
+import TicketService from 'components/TicketService/TicketService';
+import { useState } from 'react';
+import { services } from 'db/Services';
 import {
   ServiceTitle,
   ServiceList,
   ServiceListItem,
+  ServiceListItemLink,
 } from './OurService.styled';
+import PacketTour from 'components/PacketTour/PacketTour';
+import IndividualTour from 'components/IndividualTour/IndividualTour';
+import HotelService from 'components/HotelServices/HotelServices';
+import ExoticService from 'components/ExoticService/ExoticService';
+import TransferService from 'components/TransferService/TransferService';
+import ExcursionService from 'components/ExcursionService/ExcursionService';
+import EventTicket from 'components/EventTicket/EventTicket';
+import MiceService from 'components/MiceService/MiceService';
+import InsuarenceService from 'components/InsuarenceService/InsuarenceService';
 
 export const OurService = () => {
+  const [selectedService, setSelectedService] = useState(services[0]);
+
+  const handleClick = service => {
+    setSelectedService(service);
+  };
+
   return (
-    <>
+    <Container>
       <ServiceTitle>Наші послуги</ServiceTitle>
       <ServiceList>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-plane`}></use>
-          </svg>
-          Авіаквитки
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-stack`}></use>
-          </svg>
-          Пакетні тури
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-user-tie`}></use>
-          </svg>
-          Індивідуальні тури
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-office`}></use>
-          </svg>
-          Готелі
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-glass2`}></use>
-          </svg>
-          Екзотичний відпочинок
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-automobile`}></use>
-          </svg>
-          Трансфери
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-group`}></use>
-          </svg>
-          Екскурсії
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-ticket`}></use>
-          </svg>
-          Квитки на заходи
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-sphere`}></use>
-          </svg>
-          MICE
-        </ServiceListItem>
-        <ServiceListItem>
-          <svg width="40" height="40" fill="var(--grey-gold)">
-            <use href={`${sprite}#icon-folder-plus`}></use>
-          </svg>
-          Медичне страхування
-        </ServiceListItem>
+        {services.map(service => (
+          <ServiceListItem
+            key={service.id}
+            onClick={() => handleClick(service)}
+          >
+            <ServiceListItemLink>
+              <svg width="40" height="40" fill="var(--grey-gold)">
+                <use href={service.image}></use>
+              </svg>
+              {service.title}
+            </ServiceListItemLink>
+          </ServiceListItem>
+        ))}
       </ServiceList>
-    </>
+      <div>
+        {selectedService && (
+          <div>
+            {selectedService.title === 'Пакетні тури' && <PacketTour />}
+            {selectedService.title === 'Індивідуальні тури' && (
+              <IndividualTour />
+            )}
+            {selectedService.title === 'Готелі' && <HotelService />}
+            {selectedService.title === 'Екзотичний відпочинок' && (
+              <ExoticService />
+            )}
+            {selectedService.title === 'Авіаквитки' && <TicketService />}
+            {selectedService.title === 'Трансфери' && <TransferService />}
+            {selectedService.title === 'Екскурсії' && <ExcursionService />}
+            {selectedService.title === 'Квитки на заходи' && <EventTicket />}
+            {selectedService.title === 'MICE' && <MiceService />}
+            {selectedService.title === 'Медичне страхування' && (
+              <InsuarenceService />
+            )}
+          </div>
+        )}
+      </div>
+    </Container>
   );
 };

@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { NavLink } from 'react-router-dom';
 
 export const ServiceTitle = styled.h2`
   font-size: 32px;
@@ -30,6 +31,22 @@ export const ServiceListItem = styled.li`
 
   &:hover,
   &:focus {
+    border: 1px solid var(--grey-gold);
+  }
+`;
+
+export const ServiceListItemLink = styled(NavLink)`
+  display: flex;
+  flex-direction: column;
+  justify-content: start;
+  align-items: flex-start;
+  gap: 20px;
+  border-radius: 12px;
+  cursor: pointer;
+  width: 100%;
+  height: 100%;
+
+  &.active ${ServiceListItem} {
     border: 1px solid var(--grey-gold);
   }
 `;
