@@ -2,6 +2,7 @@ import {
   FeedbackFormStyled,
   TextContentWrapper,
   FormText,
+  InputButtonWrapper,
   FormInput,
   FormButton,
 } from './FeedbackForm.styled';
@@ -16,10 +17,12 @@ export const FeedbackForm = () => {
           деталі та надіслати пропозиції
         </FormText>
       </TextContentWrapper>
-      <label>
-        <FormInput type="tel"></FormInput>
-      </label>
-      <FormButton type="submit">Відправити</FormButton>
+      <InputButtonWrapper>
+        <label>
+          <FormInput type="tel" placeholder="+380"></FormInput>
+        </label>
+        <FormButton type="submit">Відправити</FormButton>
+      </InputButtonWrapper>
     </FeedbackFormStyled>
   );
 };

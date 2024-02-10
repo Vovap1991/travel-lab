@@ -8,6 +8,7 @@ export const FeedbackFormStyled = styled.form`
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.48);
   border-radius: 25px;
+  width: 900px;
 `;
 
 export const TextContentWrapper = styled.div`
@@ -17,6 +18,12 @@ export const TextContentWrapper = styled.div`
 
 export const FormText = styled.p`
   width: 350px;
+`;
+
+export const InputButtonWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
 `;
 
 export const FormInput = styled.input`

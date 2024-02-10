@@ -8,3 +8,11 @@ export const HeaderContainer = styled(Container)`
   align-items: center;
   padding: 15px;
 `;
+
+export const HeaderWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: center;
+  gap: 100px;
+`;

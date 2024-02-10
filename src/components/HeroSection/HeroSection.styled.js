@@ -24,6 +24,10 @@ export const HeroContainer = styled(Container)`
   display: flex;
   flex-direction: column;
   gap: 20px;
+  width: 800px;
+  align-items: flex-start;
+  margin-right: auto;
+  margin-left: 60px;
 `;
 
 export const HeroSectionTitle = styled.h1`
@@ -34,7 +38,6 @@ export const HeroSectionTitle = styled.h1`
 export const HeroSectionText = styled.p`
   font-size: 16px;
   line-height: 22px;
-  max-width: 950px;
   font-weight: 600;
 `;
 
@@ -43,6 +46,7 @@ export const AdvantagesList = styled.ul`
   flex-direction: row;
   justify-content: space-between;
   margin-bottom: 30px;
+  width: 100%;
 `;
 
 export const AdvantagesListItem = styled.li`
