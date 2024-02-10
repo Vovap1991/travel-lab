@@ -19,8 +19,16 @@ export const FormText = styled.p`
   width: 350px;
 `;
 
+export const FormInput = styled.input`
+  outline: none;
+  padding: 10px;
+  border-radius: 25px;
+  width: 180px;
+  cursor: pointer;
+`;
+
 export const FormButton = styled.button`
-  background-color: #d7d2be;
+  background-color: var(--grey-gold);
   padding: 10px;
   border-radius: 25px;
   width: 140px;

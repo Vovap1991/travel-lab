@@ -2,6 +2,7 @@ import {
   FeedbackFormStyled,
   TextContentWrapper,
   FormText,
+  FormInput,
   FormButton,
 } from './FeedbackForm.styled';
 
@@ -16,7 +17,7 @@ export const FeedbackForm = () => {
         </FormText>
       </TextContentWrapper>
       <label>
-        <input type="tel"></input>
+        <FormInput type="tel"></FormInput>
       </label>
       <FormButton type="submit">Відправити</FormButton>
     </FeedbackFormStyled>
