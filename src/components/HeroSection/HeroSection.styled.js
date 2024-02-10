@@ -42,6 +42,7 @@ export const AdvantagesList = styled.ul`
   display: flex;
   flex-direction: row;
   justify-content: space-between;
+  margin-bottom: 30px;
 `;
 
 export const AdvantagesListItem = styled.li`
