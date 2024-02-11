@@ -3,7 +3,7 @@ import { Container } from 'components/StyledComponents/Container';
 
 export const HeroSectionStyled = styled.section`
   width: 100%;
-  height: 500px;
+  height: 800px;
   background-image: linear-gradient(
       335deg,
       rgba(0, 0, 0, 0.6083026960784313) 100%,
@@ -23,17 +23,17 @@ export const HeroSectionStyled = styled.section`
 export const HeroContainer = styled(Container)`
   display: flex;
   flex-direction: column;
-  gap: 20px;
+  gap: 50px;
 `;
 
 export const HeroSectionTitle = styled.h1`
-  font-size: 50px;
-  line-height: 35px;
+  font-size: 80px;
+  line-height: 1.43;
 `;
 
 export const HeroSectionText = styled.p`
-  font-size: 16px;
-  line-height: 22px;
+  font-size: 25px;
+  line-height: 1.43;
   font-weight: 600;
   max-width: 800px;
 `;
@@ -41,14 +41,15 @@ export const HeroSectionText = styled.p`
 export const AdvantagesList = styled.ul`
   display: flex;
   flex-direction: row;
-  justify-content: space-between;
+  justify-content: center;
   margin-bottom: 30px;
-  max-width: 900px;
+  gap: 50px;
+  /* max-width: 900px; */
 `;
 
 export const AdvantagesListItem = styled.li`
-  width: 150px;
-  font-size: 16px;
-  line-height: 22px;
+  /* width: 150px; */
+  font-size: 25px;
+  line-height: 1.43;
   font-weight: 600;
 `;
