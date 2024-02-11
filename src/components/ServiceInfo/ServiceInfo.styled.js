@@ -1,13 +1,9 @@
 import styled from 'styled-components';
-import { Container } from 'components/StyledComponents/Container';
 
-export const ServiceInfoContainer = styled(Container)`
+export const ServiceInfoWrapper = styled.div`
   display: flex;
   flex-wrap: wrap;
   gap: 10px;
-  justify-content: center;
-  align-items: center;
-  padding: 0;
 `;
 
 export const TopImages = styled.div`
@@ -25,6 +21,7 @@ export const BottomContent = styled.div`
   display: flex;
   flex-direction: row;
   gap: 10px;
+  align-items: center;
 `;
 
 export const BottomContentItem = styled.div`

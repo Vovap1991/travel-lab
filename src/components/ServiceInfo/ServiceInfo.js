@@ -1,5 +1,5 @@
 import {
-  ServiceInfoContainer,
+  ServiceInfoWrapper,
   TopImages,
   TopImagesItem,
   BottomContent,
@@ -13,7 +13,7 @@ import { SecondaryButton } from 'components/StyledComponents/SecondaryButton';
 
 export const ServiceInfo = ({ data }) => {
   return (
-    <ServiceInfoContainer>
+    <ServiceInfoWrapper>
       <TopImages>
         <TopImagesItem src={data.imageOne} alt={data.title}></TopImagesItem>
         <TopImagesItem src={data.imageTwo} alt={data.title}></TopImagesItem>
@@ -32,6 +32,6 @@ export const ServiceInfo = ({ data }) => {
           ></BottomSingleImage>
         </BottomContentItem>
       </BottomContent>
-    </ServiceInfoContainer>
+    </ServiceInfoWrapper>
   );
 };

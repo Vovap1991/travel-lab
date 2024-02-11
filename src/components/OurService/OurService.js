@@ -1,4 +1,3 @@
-import { Container } from 'components/StyledComponents/Container';
 import { useState } from 'react';
 import { services } from 'db/Services';
 import {
@@ -30,7 +29,7 @@ export const OurService = () => {
   };
 
   return (
-    <Container>
+    <>
       <ServiceTitle>Наші послуги</ServiceTitle>
       <ServiceList>
         {services.map(service => (
@@ -53,6 +52,6 @@ export const OurService = () => {
           <ServiceInfo data={selectedService.data} />
         )}
       </div>
-    </Container>
+    </>
   );
 };
