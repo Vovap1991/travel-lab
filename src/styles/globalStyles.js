@@ -47,13 +47,19 @@ export const GlobalStyle = createGlobalStyle`
         font-size: 14px;
         line-height: 1.43;
         background-color: var(--black-primary);
+        /* background-color: #eef2f7; */
         color: var(--white);
+        /* color: #84644d; */
+        /* color: black; */
         width: 100%;
         height: 100vh;
         padding-bottom: 40px;
     }
     header {
         background-color: var(--black-secondary);
+        /* background-color: #eef2f7; */
+        /* color: #84644d; */
+        /* color: black; */
     }
 
     /* input[type='radio'] {

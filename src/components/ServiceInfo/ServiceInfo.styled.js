@@ -14,7 +14,7 @@ export const TopImages = styled.div`
 
 export const TopImagesItem = styled.img`
   width: calc(100% / 2 - 10px);
-  border-radius: 4px;
+  border-radius: 8px;
 `;
 
 export const BottomContent = styled.div`
@@ -26,7 +26,7 @@ export const BottomContent = styled.div`
 
 export const BottomContentItem = styled.div`
   width: calc(50% - 10px);
-  border-radius: 4px;
+  border-radius: 8px;
 `;
 
 export const ServiceInfoSubtitle = styled.h3`
@@ -43,5 +43,5 @@ export const ServiceInfoText = styled.p`
 
 export const BottomSingleImage = styled.img`
   width: 100%;
-  border-radius: 4px;
+  border-radius: 8px;
 `;
