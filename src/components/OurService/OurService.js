@@ -1,5 +1,4 @@
 import { Container } from 'components/StyledComponents/Container';
-import TicketService from 'components/TicketService/TicketService';
 import { useState } from 'react';
 import { services } from 'db/Services';
 import {
@@ -8,18 +7,23 @@ import {
   ServiceListItem,
   ServiceListItemLink,
 } from './OurService.styled';
-import PacketTour from 'components/PacketTour/PacketTour';
-import IndividualTour from 'components/IndividualTour/IndividualTour';
-import HotelService from 'components/HotelServices/HotelServices';
-import ExoticService from 'components/ExoticService/ExoticService';
-import TransferService from 'components/TransferService/TransferService';
-import ExcursionService from 'components/ExcursionService/ExcursionService';
-import EventTicket from 'components/EventTicket/EventTicket';
-import MiceService from 'components/MiceService/MiceService';
-import InsuarenceService from 'components/InsuarenceService/InsuarenceService';
+import { TestService } from 'components/TestService';
 
 export const OurService = () => {
   const [selectedService, setSelectedService] = useState(services[0]);
+
+  const serviceComponents = {
+    'Пакетні тури': true,
+    'Індивідуальні тури': true,
+    Готелі: true,
+    'Екзотичний відпочинок': true,
+    Авіаквитки: true,
+    Трансфери: true,
+    Екскурсії: true,
+    'Квитки на заходи': true,
+    MICE: true,
+    'Медичне страхування': true,
+  };
 
   const handleClick = service => {
     setSelectedService(service);
@@ -43,26 +47,10 @@ export const OurService = () => {
           </ServiceListItem>
         ))}
       </ServiceList>
+
       <div>
-        {selectedService && (
-          <div>
-            {selectedService.title === 'Пакетні тури' && <PacketTour />}
-            {selectedService.title === 'Індивідуальні тури' && (
-              <IndividualTour />
-            )}
-            {selectedService.title === 'Готелі' && <HotelService />}
-            {selectedService.title === 'Екзотичний відпочинок' && (
-              <ExoticService />
-            )}
-            {selectedService.title === 'Авіаквитки' && <TicketService />}
-            {selectedService.title === 'Трансфери' && <TransferService />}
-            {selectedService.title === 'Екскурсії' && <ExcursionService />}
-            {selectedService.title === 'Квитки на заходи' && <EventTicket />}
-            {selectedService.title === 'MICE' && <MiceService />}
-            {selectedService.title === 'Медичне страхування' && (
-              <InsuarenceService />
-            )}
-          </div>
+        {selectedService && serviceComponents[selectedService.title] && (
+          <TestService text={selectedService.text} />
         )}
       </div>
     </Container>
