@@ -7,7 +7,7 @@ import {
   ServiceListItem,
   ServiceListItemLink,
 } from './OurService.styled';
-import { TestService } from 'components/TestService';
+import { ServiceInfo } from 'components/ServiceInfo/ServiceInfo';
 
 export const OurService = () => {
   const [selectedService, setSelectedService] = useState(services[0]);
@@ -50,7 +50,7 @@ export const OurService = () => {
 
       <div>
         {selectedService && serviceComponents[selectedService.title] && (
-          <TestService text={selectedService.text} />
+          <ServiceInfo data={selectedService.data} />
         )}
       </div>
     </Container>

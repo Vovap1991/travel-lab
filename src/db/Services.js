@@ -1,7 +1,21 @@
 import sprite from '../assets/sprite.svg';
+import imageOne from '../assets/images/serviceImages/lady-business-class.jpeg';
+import imageTwo from '../assets/images/serviceImages/jet.jpeg';
+import imageThree from '../assets/images/serviceImages/plane-salon.jpeg';
 
 export const services = [
-  { id: 1, title: 'Пакетні тури', image: `${sprite}#icon-stack`, text: 'a' },
+  {
+    id: 1,
+    title: 'Пакетні тури',
+    image: `${sprite}#icon-stack`,
+    data: {
+      imageOne: imageOne,
+      imageTwo: imageTwo,
+      subtitle: 'Авіаквитки',
+      text: 'Тут буде скоро текст',
+      imageThree: imageThree,
+    },
+  },
   {
     id: 2,
     title: 'Індивідуальні тури',
@@ -19,14 +33,14 @@ export const services = [
   { id: 6, title: 'Трансфери', image: `${sprite}#icon-automobile`, text: 'f' },
   { id: 7, title: 'Екскурсії', image: `${sprite}#icon-group`, text: 'g' },
   {
-    id: 7,
+    id: 8,
     title: 'Квитки на заходи',
     image: `${sprite}#icon-ticket`,
     text: 'h',
   },
-  { id: 8, title: 'MICE', image: `${sprite}#icon-sphere`, text: 'i' },
+  { id: 9, title: 'MICE', image: `${sprite}#icon-sphere`, text: 'i' },
   {
-    id: 9,
+    id: 10,
     title: 'Медичне страхування',
     image: `${sprite}#icon-folder-plus`,
     text: 'j',

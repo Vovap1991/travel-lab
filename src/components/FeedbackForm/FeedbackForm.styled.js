@@ -33,10 +33,3 @@ export const FormInput = styled.input`
   width: 180px;
   cursor: pointer;
 `;
-
-export const FormButton = styled.button`
-  background-color: var(--grey-gold);
-  padding: 10px;
-  border-radius: 25px;
-  width: 140px;
-`;

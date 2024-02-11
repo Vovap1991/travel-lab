@@ -18,7 +18,6 @@ export const HeroSectionStyled = styled.section`
   flex-direction: column;
   justify-content: center;
   align-items: center;
-  margin-bottom: 40px;
 `;
 
 export const HeroContainer = styled(Container)`

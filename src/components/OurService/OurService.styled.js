@@ -12,6 +12,7 @@ export const ServiceList = styled.ul`
   flex-direction: row;
   justify-content: space-between;
   align-items: center;
+  margin-bottom: 30px;
 `;
 
 export const ServiceListItem = styled.li`

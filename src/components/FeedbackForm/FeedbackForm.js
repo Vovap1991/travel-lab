@@ -4,8 +4,9 @@ import {
   FormText,
   InputButtonWrapper,
   FormInput,
-  FormButton,
 } from './FeedbackForm.styled';
+
+import { PrimaryButton } from 'components/StyledComponents/PrimaryButton';
 
 export const FeedbackForm = () => {
   return (
@@ -21,7 +22,7 @@ export const FeedbackForm = () => {
         <label>
           <FormInput type="tel" placeholder="+380"></FormInput>
         </label>
-        <FormButton type="submit">Відправити</FormButton>
+        <PrimaryButton type="submit">Відправити</PrimaryButton>
       </InputButtonWrapper>
     </FeedbackFormStyled>
   );
