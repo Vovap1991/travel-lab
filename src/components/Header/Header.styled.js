@@ -1,5 +1,6 @@
 import styled from 'styled-components';
 import { Container } from 'components/StyledComponents/Container';
+import { NavLink } from 'react-router-dom';
 
 export const HeaderContainer = styled(Container)`
   display: flex;
@@ -15,4 +16,11 @@ export const HeaderWrapper = styled.div`
   justify-content: center;
   align-items: center;
   gap: 100px;
+`;
+
+export const Logo = styled(NavLink)`
+  font-size: 30px;
+  &:hover {
+    color: var(--grey-gold);
+  }
 `;

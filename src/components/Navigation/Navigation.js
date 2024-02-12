@@ -1,21 +1,21 @@
 import { NavLink } from 'react-router-dom';
-import { NavigationList } from './Navigation.styled';
+import { NavigationList, LinkNavigation } from './Navigation.styled';
 
 export const Navigation = () => {
   return (
     <nav>
       <NavigationList>
         <li>
-          <NavLink to="/">Про компанію</NavLink>
+          <LinkNavigation to="/">Про компанію</LinkNavigation>
         </li>
         <li>
-          <NavLink to="/">Послуги</NavLink>
+          <LinkNavigation to="">Послуги</LinkNavigation>
         </li>
         <li>
-          <NavLink to="/">Відпочинок</NavLink>
+          <LinkNavigation to="">Відпочинок</LinkNavigation>
         </li>
         <li>
-          <NavLink to="/">Афіша</NavLink>
+          <LinkNavigation to="">Афіша</LinkNavigation>
         </li>
       </NavigationList>
     </nav>
