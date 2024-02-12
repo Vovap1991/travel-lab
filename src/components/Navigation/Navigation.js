@@ -1,4 +1,3 @@
-import { NavLink } from 'react-router-dom';
 import { NavigationList, LinkNavigation } from './Navigation.styled';
 
 export const Navigation = () => {
