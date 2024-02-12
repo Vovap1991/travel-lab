@@ -1,56 +1,56 @@
 import { createGlobalStyle } from 'styled-components';
 import 'modern-normalize';
-import PoppinsRegular from '../assets/fonts/Poppins/Poppins-Regular.ttf';
-import PoppinsMedium from '../assets/fonts/Poppins/Poppins-Medium.ttf';
-import PoppinsSemiBold from '../assets/fonts/Poppins/Poppins-SemiBold.ttf';
-import PoppinsBold from '../assets/fonts/Poppins/Poppins-Bold.ttf';
+import MonseratRegular from '../assets/fonts/Montserrat-Regular.ttf';
+import MonseratMedium from '../assets/fonts/Montserrat-Medium.ttf';
+import MonseratSemiBold from '../assets/fonts/Montserrat-SemiBold.ttf';
+import MonseratBold from '../assets/fonts/Montserrat-Bold.ttf';
 
 export const GlobalStyle = createGlobalStyle`
     @font-face {
-        font-family: 'Poppins';
-        src: local('Poppins'),
-        url(${PoppinsRegular}) format('truetype');
+        font-family: 'Montserrat';
+        src: local('Montserrat'),
+        url(${MonseratRegular}) format('truetype');
         font-weight: 400;
         font-style: normal;
         font-display: swap;
     }
 
     @font-face {
-        font-family: 'Poppins';
-        src: local('Poppins'),
-        url(${PoppinsMedium}) format('truetype');
+        font-family: 'Montserrat';
+        src: local('Montserrat'),
+        url(${MonseratMedium}) format('truetype');
         font-weight: 500;
         font-style: normal;
         font-display: swap;
     }
 
     @font-face {
-        font-family: 'Poppins';
-        src: local('Poppins'),
-        url(${PoppinsSemiBold}) format('truetype');
+        font-family: 'Montserrat';
+        src: local('Montserrat'),
+        url(${MonseratSemiBold}) format('truetype');
         font-weight: 600;
         font-style: normal;
         font-display: swap;
     }
 
     @font-face {
-        font-family: 'Poppins';
-        src: local('Poppins'),
-        url(${PoppinsBold}) format('truetype');
+        font-family: 'Montserrat';
+        src: local('Montserrat'),
+        url(${MonseratBold}) format('truetype');
         font-weight: 700;
         font-style: normal;
         font-display: swap;
     }
     
     body {
-        font-family: Poppins;
+        font-family: Montserrat;
         font-size: 14px;
         line-height: 1.43;
         background-color: var(--black-primary);
         /* background-color: #eef2f7; */
         color: var(--white);
-        /* color: #84644d; */
-        /* color: black; */
+        /* color: #84644d;
+        color: black; */
         width: 100%;
         height: 100vh;
         padding-bottom: 40px;
