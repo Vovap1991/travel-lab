@@ -1,11 +1,18 @@
 import { Container } from 'components/StyledComponents/Container';
-import { Link } from 'react-router-dom';
 import {
   SectionStyled,
   Title,
   List,
   ListItem,
+  Subtitle,
+  HotelName,
+  Location,
+  Price,
+  Duration,
+  AddInfo,
+  ListItemPartWrapper,
 } from './PopularDestination.styled';
+import { popularDestinations } from '../../db/PopularDest';
 
 export const PopularDestination = () => {
   return (
@@ -13,27 +20,35 @@ export const PopularDestination = () => {
       <Container>
         <Title>Популярні напрямки січня</Title>
         <List>
-          <ListItem>
-            <h3>Мальдіви</h3>
-            <p>Раа</p>
-            <p>Від 3500 долл</p>
-            <p>За тиждень</p>
-            <Link>Докладніше</Link>
-          </ListItem>
-          <ListItem>
-            <h3>Мальдіви</h3>
-            <p>Раа</p>
-            <p>Від 3500 долл</p>
-            <p>За тиждень</p>
-            <Link>Докладніше</Link>
-          </ListItem>
-          <ListItem>
-            <h3>Мальдіви</h3>
-            <p>Раа</p>
-            <p>Від 3500 долл</p>
-            <p>За тиждень</p>
-            <Link>Докладніше</Link>
-          </ListItem>
+          {popularDestinations.map(dest => (
+            <ListItem
+              key={dest.id}
+              style={{ backgroundImage: `url(${dest.image})` }}
+            >
+              <ListItemPartWrapper>
+                <Subtitle>{dest.title}</Subtitle>
+                <Price>Від {dest.price} грн</Price>
+              </ListItemPartWrapper>
+              <ListItemPartWrapper>
+                <HotelName>{dest.hotel}</HotelName>
+                <Duration>За тиждень</Duration>
+              </ListItemPartWrapper>
+              <ListItemPartWrapper>
+                <Location>{dest.location}</Location>
+                <AddInfo>Докладніше</AddInfo>
+              </ListItemPartWrapper>
+              {/* <ListItemPartWrapper>
+                <Subtitle>{dest.title}</Subtitle>
+                <HotelName>{dest.hotel}</HotelName>
+                <Location>{dest.location}</Location>
+              </ListItemPartWrapper>
+              <ListItemPartWrapper>
+                <Price>Від {dest.price} грн</Price>
+                <Duration>За тиждень</Duration>
+                <AddInfo>Докладніше</AddInfo>
+              </ListItemPartWrapper> */}
+            </ListItem>
+          ))}
         </List>
       </Container>
     </SectionStyled>
