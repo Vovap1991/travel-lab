@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/travel-lab/static/css/main.5bc2ef0e.css",
-    "main.js": "/travel-lab/static/js/main.3146c844.js",
+    "main.js": "/travel-lab/static/js/main.a22dce5e.js",
     "static/media/heroImage.jpeg": "/travel-lab/static/media/heroImage.49514468863a9b7f47f9.jpeg",
     "static/media/Montserrat-Bold.ttf": "/travel-lab/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
     "static/media/Montserrat-SemiBold.ttf": "/travel-lab/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
@@ -9,14 +9,17 @@
     "static/media/Montserrat-Regular.ttf": "/travel-lab/static/media/Montserrat-Regular.24785cc015b27a3e964b.ttf",
     "static/media/jet.jpeg": "/travel-lab/static/media/jet.e7a20a1cdf6f07f89d74.jpeg",
     "static/media/plane-salon.jpeg": "/travel-lab/static/media/plane-salon.678e41477e4cdde20cbb.jpeg",
+    "static/media/oasis.jpeg": "/travel-lab/static/media/oasis.52da0944a4527f1624d8.jpeg",
+    "static/media/bellis.jpeg": "/travel-lab/static/media/bellis.4b1b1f70d43621c7ff21.jpeg",
+    "static/media/atmosphere.jpeg": "/travel-lab/static/media/atmosphere.6f387ad86cbf09ee30e2.jpeg",
     "static/media/lady-business-class.jpeg": "/travel-lab/static/media/lady-business-class.39e451d75e77b07e4a28.jpeg",
     "static/media/sprite.svg": "/travel-lab/static/media/sprite.34522504daa12ac8d97f7267f322535c.svg",
     "index.html": "/travel-lab/index.html",
     "main.5bc2ef0e.css.map": "/travel-lab/static/css/main.5bc2ef0e.css.map",
-    "main.3146c844.js.map": "/travel-lab/static/js/main.3146c844.js.map"
+    "main.a22dce5e.js.map": "/travel-lab/static/js/main.a22dce5e.js.map"
   },
   "entrypoints": [
     "static/css/main.5bc2ef0e.css",
-    "static/js/main.3146c844.js"
+    "static/js/main.a22dce5e.js"
   ]
 }
