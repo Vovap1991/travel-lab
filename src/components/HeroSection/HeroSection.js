@@ -23,14 +23,15 @@ export const HeroSection = ({ backgroundImage }) => {
           <AdvantagesListItem>
             <p>Найкращі курорту світу лише для Вас</p>
           </AdvantagesListItem>
-          <AdvantagesListItem>
-            <p>Найбільша база турів та готелів</p>
-          </AdvantagesListItem>
+
           <AdvantagesListItem>
             <p>Вильоти з будь-якого міста світу</p>
           </AdvantagesListItem>
           <AdvantagesListItem>
             <p>Індивідуальний підхід до клієнтів</p>
+          </AdvantagesListItem>
+          <AdvantagesListItem>
+            <p>Найбільша база турів та готелів</p>
           </AdvantagesListItem>
         </AdvantagesList>
         <FeedbackForm />

@@ -4,6 +4,7 @@ import {
   FormText,
   InputButtonWrapper,
   FormInput,
+  FormTitle,
 } from './FeedbackForm.styled';
 
 import { PrimaryButton } from 'components/StyledComponents/PrimaryButton';
@@ -12,10 +13,9 @@ export const FeedbackForm = () => {
   return (
     <FeedbackFormStyled>
       <TextContentWrapper>
-        <h2>Підібрати Вам тур?</h2>
+        <FormTitle>Підібрати Вам тур?</FormTitle>
         <FormText>
-          Залиште Ваш телефон і наш менеджер зв'яжеться з Вами, щоб уточнити
-          деталі та надіслати пропозиції
+          Залиште Ваш телефон і наш менеджер зв'яжеться з Вами
         </FormText>
       </TextContentWrapper>
       <InputButtonWrapper>

@@ -5,6 +5,7 @@ import {
   ServiceList,
   ServiceListItem,
   ServiceListItemLink,
+  ServiceWrapper,
 } from './OurService.styled';
 import { ServiceInfo } from 'components/ServiceInfo/ServiceInfo';
 
@@ -29,7 +30,7 @@ export const OurService = () => {
   };
 
   return (
-    <>
+    <ServiceWrapper>
       <ServiceTitle>Наші послуги</ServiceTitle>
       <ServiceList>
         {services.map(service => (
@@ -52,6 +53,6 @@ export const OurService = () => {
           <ServiceInfo data={selectedService.data} />
         )}
       </div>
-    </>
+    </ServiceWrapper>
   );
 };

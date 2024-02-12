@@ -1,6 +1,7 @@
 import styled from 'styled-components';
 
 export const FeedbackFormStyled = styled.form`
+  height: 150px;
   display: flex;
   flex-direction: row;
   justify-content: space-between;
@@ -8,16 +9,24 @@ export const FeedbackFormStyled = styled.form`
   padding: 20px;
   background-color: rgba(0, 0, 0, 0.48);
   border-radius: 25px;
-  width: 900px;
 `;
 
 export const TextContentWrapper = styled.div`
   display: flex;
-  flex-direction: column;
+  flex-direction: row;
+  align-items: center;
+  gap: 30px;
+`;
+
+export const FormTitle = styled.h3`
+  font-size: 40px;
+  line-height: 1.43;
 `;
 
 export const FormText = styled.p`
-  width: 350px;
+  font-size: 15px;
+  line-height: 1.43;
+  width: 500px;
 `;
 
 export const InputButtonWrapper = styled.div`
@@ -30,6 +39,7 @@ export const FormInput = styled.input`
   outline: none;
   padding: 10px;
   border-radius: 25px;
-  width: 180px;
+  width: 200px;
   cursor: pointer;
+  height: 60px;
 `;

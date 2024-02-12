@@ -1,6 +1,10 @@
 import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
+export const ServiceWrapper = styled.div`
+  margin-bottom: 40px;
+`;
+
 export const ServiceTitle = styled.h2`
   font-size: 32px;
   line-height: 35px;
