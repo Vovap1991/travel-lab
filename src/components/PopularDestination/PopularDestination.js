@@ -37,16 +37,7 @@ export const PopularDestination = () => {
                 <Location>{dest.location}</Location>
                 <AddInfo>Докладніше</AddInfo>
               </ListItemPartWrapper>
-              {/* <ListItemPartWrapper>
-                <Subtitle>{dest.title}</Subtitle>
-                <HotelName>{dest.hotel}</HotelName>
-                <Location>{dest.location}</Location>
-              </ListItemPartWrapper>
-              <ListItemPartWrapper>
-                <Price>Від {dest.price} грн</Price>
-                <Duration>За тиждень</Duration>
-                <AddInfo>Докладніше</AddInfo>
-              </ListItemPartWrapper> */}
+    
             </ListItem>
           ))}
         </List>

@@ -2,7 +2,7 @@ import styled from 'styled-components';
 import { NavLink } from 'react-router-dom';
 
 export const ServiceWrapper = styled.div`
-  margin-bottom: 40px;
+  padding-bottom: 50px;
 `;
 
 export const ServiceTitle = styled.h2`
