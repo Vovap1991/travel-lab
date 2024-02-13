@@ -1,3 +1,4 @@
+import { Advantages } from 'components/Advantages/Advantages';
 import { HeroSection } from 'components/HeroSection/HeroSection';
 import { OurService } from 'components/OurService/OurService';
 import { PopularDestination } from 'components/PopularDestination/PopularDestination';
@@ -15,6 +16,7 @@ const HomePage = () => {
       </Container>
       <PopularDestination />
       <SelfBook />
+      <Advantages />
     </>
   );
 };
