@@ -9,6 +9,7 @@ export const ServiceTitle = styled.h2`
   font-size: 32px;
   line-height: 35px;
   margin-bottom: 20px;
+  margin-top: 50px;
 `;
 
 export const ServiceList = styled.ul`

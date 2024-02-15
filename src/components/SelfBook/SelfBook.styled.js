@@ -11,6 +11,12 @@ export const SelfBookTitle = styled.h2`
   margin-bottom: 35px;
 `;
 
+export const SelfBookText = styled.p`
+  font-size: 25px;
+  line-height: 35px;
+  margin-bottom: 35px;
+`;
+
 export const SelfBookList = styled.ul`
   display: flex;
   flex-direction: row;

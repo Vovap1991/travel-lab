@@ -5,6 +5,7 @@ import {
   SelfBookTitle,
   SelfBookList,
   SelfBookListItem,
+  SelfBookText,
 } from './SelfBook.styled';
 
 export const SelfBook = () => {
@@ -12,6 +13,14 @@ export const SelfBook = () => {
     <SelfBookSection>
       <Container>
         <SelfBookTitle>Сервіс для самостійного бронювання</SelfBookTitle>
+
+        <SelfBookText>
+          Якщо Ви полюбляєте самостійно та неквапливо обрати підходящий варіант
+          та забронювати його - саме для цього ми розробили сервіс для
+          самостійного бронювання. Реєструйтеся, бронюйте, сплачуйте с карти, а
+          підтримка 24/7 допоможе вразі проблемної ситуаціъ. Переходьте за
+          посиланням та обирайте Ваш ідеальний варіант.
+        </SelfBookText>
 
         <SelfBookList>
           <SelfBookListItem>
