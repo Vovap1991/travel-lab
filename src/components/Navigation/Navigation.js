@@ -1,9 +1,16 @@
-import { NavigationList, LinkNavigation } from './Navigation.styled';
+import {
+  NavigationList,
+  LinkNavigation,
+  LinkOnlineBooking,
+} from './Navigation.styled';
 
 export const Navigation = () => {
   return (
     <nav>
       <NavigationList>
+        <li>
+          <LinkOnlineBooking to="/">Online Booking</LinkOnlineBooking>
+        </li>
         <li>
           <LinkNavigation to="/">Про компанію</LinkNavigation>
         </li>

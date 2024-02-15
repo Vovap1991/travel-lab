@@ -9,8 +9,28 @@ export const NavigationList = styled.ul`
 `;
 
 export const LinkNavigation = styled(NavLink)`
+  transition: color var(--transition-dur-and-fun);
+
   &:hover {
     color: var(--grey-gold);
+  }
+
+  /* &.active {
+    color: var(--grey-gold);
+  } */
+`;
+
+export const LinkOnlineBooking = styled(NavLink)`
+  background-color: var(--grey-gold);
+  color: var(--black-primary);
+  padding: 12px;
+  border-radius: 25px;
+  width: 140px;
+  outline: none;
+  transition: background-color var(--transition-dur-and-fun);
+
+  &:hover {
+    background-color: var(--white);
   }
 
   /* &.active {
