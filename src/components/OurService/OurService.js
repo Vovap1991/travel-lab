@@ -39,7 +39,7 @@ export const OurService = () => {
             onClick={() => handleClick(service)}
           >
             <ServiceListItemLink>
-              <svg width="40" height="40" fill="var(--grey-gold)">
+              <svg width="55" height="55" fill="var(--grey-gold)">
                 <use href={service.image}></use>
               </svg>
               {service.title}
