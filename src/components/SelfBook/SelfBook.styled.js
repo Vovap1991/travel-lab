@@ -12,9 +12,23 @@ export const SelfBookTitle = styled.h2`
 `;
 
 export const SelfBookText = styled.p`
-  font-size: 25px;
+  font-size: 23px;
   line-height: 35px;
   margin-bottom: 35px;
+`;
+
+export const SelfBookImgWrapper = styled.div`
+  display: flex;
+  flex-direction: row;
+  gap: 20px;
+  margin-bottom: 35px;
+`;
+
+export const SelfBookImg = styled.img`
+  display: block;
+  width: calc(100% / 2);
+  height: auto;
+  border-radius: 8px;
 `;
 
 export const SelfBookList = styled.ul`

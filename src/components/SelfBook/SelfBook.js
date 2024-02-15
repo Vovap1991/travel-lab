@@ -6,13 +6,22 @@ import {
   SelfBookList,
   SelfBookListItem,
   SelfBookText,
+  SelfBookImgWrapper,
+  SelfBookImg,
 } from './SelfBook.styled';
+
+import selfOne from '../../assets/images/selfBook/selfOne.jpeg';
+import selfTwo from '../../assets/images/selfBook/selfTwo.jpeg';
 
 export const SelfBook = () => {
   return (
     <SelfBookSection>
       <Container>
         <SelfBookTitle>Сервіс для самостійного бронювання</SelfBookTitle>
+        <SelfBookImgWrapper>
+          <SelfBookImg src={selfOne} alt="image" />
+          <SelfBookImg src={selfTwo} alt="image" />
+        </SelfBookImgWrapper>
 
         <SelfBookText>
           Якщо Ви полюбляєте самостійно та неквапливо обрати підходящий варіант
