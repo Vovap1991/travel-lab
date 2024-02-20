@@ -1,10 +1,10 @@
 import sprite from '../../assets/sprite.svg';
-import { SocialMediaList } from './SocialMedia.styled';
+import { SocialMediaList, SocialMediaListItem } from './SocialMedia.styled';
 
 export const SocialMedia = () => {
   return (
     <SocialMediaList>
-      <li>
+      <SocialMediaListItem>
         <a
           href="https://www.facebook.com/Traveldnepr"
           target="_blanc"
@@ -14,8 +14,8 @@ export const SocialMedia = () => {
             <use href={`${sprite}#icon-facebook`}></use>
           </svg>
         </a>
-      </li>
-      <li>
+      </SocialMediaListItem>
+      <SocialMediaListItem>
         <a
           href="https://www.instagram.com/travel.lab_tour/"
           target="_blanc"
@@ -25,7 +25,7 @@ export const SocialMedia = () => {
             <use href={`${sprite}#icon-instagram`}></use>
           </svg>
         </a>
-      </li>
+      </SocialMediaListItem>
     </SocialMediaList>
   );
 };
