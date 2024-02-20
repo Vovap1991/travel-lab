@@ -10,7 +10,7 @@ export const SocialMedia = () => {
           target="_blanc"
           rel="noopener noreferrer nofollow"
         >
-          <svg width="20" height="20" fill="white">
+          <svg width="30" height="30" fill="white">
             <use href={`${sprite}#icon-facebook`}></use>
           </svg>
         </a>
@@ -21,7 +21,7 @@ export const SocialMedia = () => {
           target="_blanc"
           rel="noopener noreferrer nofollow"
         >
-          <svg width="20" height="20" fill="white">
+          <svg width="30" height="30" fill="white">
             <use href={`${sprite}#icon-instagram`}></use>
           </svg>
         </a>
