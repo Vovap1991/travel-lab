@@ -1,4 +1,5 @@
 import { Advantages } from 'components/Advantages/Advantages';
+import { Footer } from 'components/Footer/Footer';
 import { HeroSection } from 'components/HeroSection/HeroSection';
 import { OurService } from 'components/OurService/OurService';
 import { PopularDestination } from 'components/PopularDestination/PopularDestination';
@@ -17,6 +18,7 @@ const HomePage = () => {
       <PopularDestination />
       <SelfBook />
       <Advantages />
+      <Footer />
     </>
   );
 };

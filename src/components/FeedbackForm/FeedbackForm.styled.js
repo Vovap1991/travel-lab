@@ -1,4 +1,5 @@
 import styled from 'styled-components';
+import { PrimaryButton } from 'components/StyledComponents/PrimaryButton';
 
 export const FeedbackFormStyled = styled.form`
   height: 150px;
@@ -42,4 +43,14 @@ export const FormInput = styled.input`
   width: 200px;
   cursor: pointer;
   height: 60px;
+  font-size: 18px;
+`;
+
+export const FormButton = styled(PrimaryButton)`
+  font-size: 18px;
+  transition: background-color var(--transition-dur-and-fun);
+
+  &:hover {
+    background-color: var(--white);
+  }
 `;
