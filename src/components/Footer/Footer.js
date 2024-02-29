@@ -1,19 +1,27 @@
 import { Logo } from 'components/Logo/Logo';
+import { Messangers } from 'components/Messangers/Messangers';
 import { Navigation } from 'components/Navigation/Navigation';
 import { SocialMedia } from 'components/SocialMedia/SocialMedia';
-import { Container } from 'components/StyledComponents/Container';
-import { FooterGlobal, HeaderContentWrapper } from './Footer.styled';
+import {
+  FooterGlobal,
+  FooterContentWrapper,
+  FooterContainer,
+  RightsReserved,
+} from './Footer.styled';
 
 export const Footer = () => {
   return (
-    <FooterGlobal>
-      <Container>
-        <HeaderContentWrapper>
+    <>
+      <FooterGlobal>
+        <FooterContainer>
           <Logo />
-          <Navigation />
-          <SocialMedia />
-        </HeaderContentWrapper>
-      </Container>
-    </FooterGlobal>
+          <FooterContentWrapper>
+            <Navigation />
+          </FooterContentWrapper>
+          <Messangers />
+        </FooterContainer>
+      </FooterGlobal>
+      <RightsReserved>@2016-2024 Travel.LAB All rights reserved</RightsReserved>
+    </>
   );
 };
