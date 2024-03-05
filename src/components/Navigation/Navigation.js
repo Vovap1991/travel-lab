@@ -12,7 +12,7 @@ export const Navigation = () => {
           <LinkOnlineBooking to="/">Online Booking</LinkOnlineBooking>
         </li>
         <li>
-          <LinkNavigation to="/">Про компанію</LinkNavigation>
+          <LinkNavigation to="about">Про компанію</LinkNavigation>
         </li>
         <li>
           <LinkNavigation to="">Послуги</LinkNavigation>
