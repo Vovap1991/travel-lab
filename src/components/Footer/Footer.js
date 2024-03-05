@@ -1,7 +1,6 @@
 import { Logo } from 'components/Logo/Logo';
 import { Messangers } from 'components/Messangers/Messangers';
 import { Navigation } from 'components/Navigation/Navigation';
-import { SocialMedia } from 'components/SocialMedia/SocialMedia';
 import {
   FooterGlobal,
   FooterContentWrapper,
