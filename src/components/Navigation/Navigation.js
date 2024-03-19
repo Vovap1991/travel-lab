@@ -15,7 +15,7 @@ export const Navigation = () => {
           <LinkNavigation to="about">Про компанію</LinkNavigation>
         </li>
         <li>
-          <LinkNavigation to="">Послуги</LinkNavigation>
+          <LinkNavigation to="service">Послуги</LinkNavigation>
         </li>
         <li>
           <LinkNavigation to="">Відпочинок</LinkNavigation>
