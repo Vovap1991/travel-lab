@@ -1,7 +1,7 @@
 {
   "files": {
     "main.css": "/travel-lab/static/css/main.01a603ba.css",
-    "main.js": "/travel-lab/static/js/main.1a6b2c34.js",
+    "main.js": "/travel-lab/static/js/main.72614fb6.js",
     "static/media/heroImage.jpeg": "/travel-lab/static/media/heroImage.49514468863a9b7f47f9.jpeg",
     "static/media/Montserrat-Bold.ttf": "/travel-lab/static/media/Montserrat-Bold.50f0257aa1e905f4bfaf.ttf",
     "static/media/Montserrat-SemiBold.ttf": "/travel-lab/static/media/Montserrat-SemiBold.93b37a465fc4ec0d0415.ttf",
@@ -18,10 +18,10 @@
     "static/media/sprite.svg": "/travel-lab/static/media/sprite.dbd6864ef3781cc2a59a3272b7225490.svg",
     "index.html": "/travel-lab/index.html",
     "main.01a603ba.css.map": "/travel-lab/static/css/main.01a603ba.css.map",
-    "main.1a6b2c34.js.map": "/travel-lab/static/js/main.1a6b2c34.js.map"
+    "main.72614fb6.js.map": "/travel-lab/static/js/main.72614fb6.js.map"
   },
   "entrypoints": [
     "static/css/main.01a603ba.css",
-    "static/js/main.1a6b2c34.js"
+    "static/js/main.72614fb6.js"
   ]
 }
