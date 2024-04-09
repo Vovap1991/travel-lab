@@ -17,12 +17,12 @@ export const Navigation = () => {
         <li>
           <LinkNavigation to="service">Послуги</LinkNavigation>
         </li>
-        <li>
+        {/* <li>
           <LinkNavigation to="">Відпочинок</LinkNavigation>
-        </li>
-        <li>
+        </li> */}
+        {/* <li>
           <LinkNavigation to="">Афіша</LinkNavigation>
-        </li>
+        </li> */}
       </NavigationList>
     </nav>
   );
