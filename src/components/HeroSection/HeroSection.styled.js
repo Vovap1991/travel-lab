@@ -48,7 +48,10 @@ export const AdvantagesList = styled.ul`
 `;
 
 export const AdvantagesListItem = styled.li`
-  /* width: 150px; */
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  gap: 10px;
   font-size: 25px;
   line-height: 1.43;
   font-weight: 600;
